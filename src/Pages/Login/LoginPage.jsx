@@ -96,14 +96,12 @@ const LoginPage = () => {
                         Sign in
                     </ButtonPrimary>
                 </form>
-
-                {/* Demo Glass */}
                 <div className="pt-6">
-                    <Glass className="flex flex-col justify-center items-center w-full h-[10vh] bg-blue-800/30 p-4 rounded-2xl border border-blue-900 text-[#8EC5FF]">
+                    <div className="flex flex-col justify-center items-center w-full h-[10vh] bg-blue-800/20 p-4 rounded-2xl border border-blue-900 text-[#8EC5FF]">
                         <p className="font-semibold ">Demo Credentials:</p>
                         <p className="text-sm">Email: admin@samudra-darpan.com</p>
                         <p className="text-sm">Password: demo123</p>
-                    </Glass>
+                    </div>
                 </div>
             </Glass>
         </div>
