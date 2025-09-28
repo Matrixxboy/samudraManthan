@@ -20,13 +20,13 @@ const ButtonPrimary = ({
                 color: textColor || theme.colors.text,           // use custom text color if provided
                 padding: theme.spacing.md,
                 borderRadius: theme.borderRadius.md,
-                fontWeight: "600",
+                fontWeight: "550",
                 fontFamily: theme.fontFamily.sans,
                 border: "none",
                 cursor: "pointer",
                 transition: "all 0.3s ease",
             }}
-            className={`hover:scale-105 text-xl hover:text-2xl ${className}`}
+            className={`hover:scale-105 text-md hover:text-xl ${className}`}
         >
             {children}
         </button>

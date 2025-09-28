@@ -29,7 +29,7 @@ const LoginPage = () => {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center h-screen gap-2 ">
+        <div className=" flex flex-col justify-center items-center min-h-screen gap-2 ">
             <div className="w-14 h-14 rounded-full bg-gradient-to-l  from-cyan-500 to-blue-500 flex items-center justify-center">
                 <Waves className="w-8 h-8 text-white " />
                 {/* Icon goes here */}
@@ -45,7 +45,7 @@ const LoginPage = () => {
             </p>
 
             {/* Login Glass */}
-            <Glass className="p-8 w-[500px] max-w-full rounded-2xl">
+            <Glass className="p-8 md:w-[500px] w-[300px] max-w-full rounded-2xl">
                 <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
                     {/* Email */}
                     <div className="flex flex-col gap-2 relative">
@@ -96,14 +96,21 @@ const LoginPage = () => {
                         Sign in
                     </ButtonPrimary>
                 </form>
-                <div className="pt-6">
-                    <div className="flex flex-col justify-center items-center w-full h-[10vh] bg-blue-800/20 p-4 rounded-2xl border border-blue-900 text-[#8EC5FF]">
-                        <p className="font-semibold ">Demo Credentials:</p>
-                        <p className="text-sm">Email: admin@samudra-darpan.com</p>
-                        <p className="text-sm">Password: demo123</p>
+                <div className="pt-6 ">
+                    <div className="flex flex-col justify-center items-center w-full h-[15vh] md:h-[11vh] md: bg-blue-800/20 p-4 rounded-2xl border border-blue-900 text-[#8EC5FF] hidden sm:flex">
+                        <p className="font-semibold">Demo Credentials:</p>
+                        <p className="md:text-sm text-xs">Email: admin@samudra-darpan.com</p>
+                        <p className="md:text-sm text-xs">Password: demo123</p>
                     </div>
                 </div>
             </Glass>
+            <div className="pt-6">
+                <div className="flex flex-col justify-center items-center w-full h-[15vh] bg-blue-800/20 p-4 rounded-2xl border border-blue-900 text-[#8EC5FF] sm:hidden ">
+                    <p className="font-semibold ">Demo Credentials:</p>
+                    <p className="md:text-sm text-xs">Email: admin@samudra-darpan.com</p>
+                    <p className="md:text-sm text-xs">Password: demo123</p>
+                </div>
+            </div>
         </div>
     );
 };
