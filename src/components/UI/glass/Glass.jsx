@@ -19,7 +19,6 @@ const Glass = ({
     className = "",
     bgColor = "bg-white/5",
     hoverBgColor = "hover:bg-white/10",
-    rounded = "rounded-lg",
     border = "border border-white/30",
     shadow = "shadow-lg hover:shadow-xl",
     children,
@@ -28,7 +27,6 @@ const Glass = ({
     const classes = clsx(
         bgColor,
         hoverBgColor,
-        rounded,
         border,
         shadow,
         "backdrop-blur-md text-white transition duration-300 ease-in-out",
