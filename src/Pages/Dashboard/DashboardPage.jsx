@@ -8,7 +8,7 @@ import ButtonPrimary from '../../components/UI/ButtonPrimary/ButtonPrimary';
 
 const DashboardPage = () => {
     return (
-        <div className="pt-[50px] min-h-screen p-4 sm:p-6 md:p-10 gap-10">
+        <div className="pt-20 md:pt-[50px] min-h-screen p-4 sm:p-6 md:p-10 gap-10">
       {/* title section */}
       <div className="flex flex-col mb-6">
         <p className="text-3xl sm:text-4xl bg-gradient-to-l from-cyan-400 to-blue-600 bg-clip-text text-transparent ">
